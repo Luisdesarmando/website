@@ -679,10 +679,10 @@ const QUESTION_BANKS = {
     {
       "question": "She ___ already ___ her homework.",
       "options": [
-        "has/done",
-        "have/done",
-        "has/did",
-        "have/did"
+        "has ... done",
+        "have ... done",
+        "has ... did",
+        "have ... did"
       ],
       "correct": "a"
     },
@@ -739,10 +739,10 @@ const QUESTION_BANKS = {
     {
       "question": "How long ___ you ___ English?",
       "options": [
-        "have/studied",
-        "has/studied",
-        "are/studying",
-        "do/study"
+        "have ... studied",
+        "has ... studied",
+        "are ... studying",
+        "do ... study"
       ],
       "correct": "a"
     },
@@ -799,10 +799,10 @@ const QUESTION_BANKS = {
     {
       "question": "I ___ never ___ to Paris.",
       "options": [
-        "have/been",
-        "has/been",
-        "have/went",
-        "has/went"
+        "have ... been",
+        "has ... been",
+        "have ... went",
+        "has ... went"
       ],
       "correct": "a"
     },
@@ -889,10 +889,10 @@ const QUESTION_BANKS = {
     {
       "question": "___ you ever ___ sushi?",
       "options": [
-        "Have/tried",
-        "Has/tried",
-        "Have/try",
-        "Has/try"
+        "Have ... tried",
+        "Has ... tried",
+        "Have ... try",
+        "Has ... try"
       ],
       "correct": "a"
     },
@@ -989,10 +989,10 @@ const QUESTION_BANKS = {
     {
       "question": "This exercise is ___ difficult ___ the last one.",
       "options": [
-        "as/as",
-        "more/than",
-        "most/than",
-        "so/as"
+        "as ... as",
+        "more ... than",
+        "most ... than",
+        "so ... as"
       ],
       "correct": "a"
     },
@@ -2797,14 +2797,14 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ¿___ es tu película favorita?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Me gusta más que las otras.",
+      "question": "A: ¿___ es tu película favorita?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Porque me gusta más que las otras.",
       "options": [
-        "Cuál",
         "Por qué",
+        "Cuál",
         "Dónde",
-        "Esta"
+        "Cómo"
       ],
-      "correct": "d"
+      "correct": "a"
     },
     {
       "question": "A: ¿___ al gimnasio ayer?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: No, estaba cerrado.",
@@ -3019,7 +3019,7 @@ const QUESTION_BANKS = {
   ],
   "B1": [
     {
-      "question": "Si ___ más tiempo libre, ¿qué harías?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Viajaría más.",
+      "question": "A: Si ___ más tiempo libre, ¿qué harías?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Viajaría más.",
       "options": [
         "tendrías",
         "tuvieras",
@@ -3431,7 +3431,7 @@ const QUESTION_BANKS = {
   ],
   "B2": [
     {
-      "question": "A: De ___ haber sabido las consecuencias, habría actuado de otra manera.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Siempre es fácil decirlo después.",
+      "question": "A: De ___ sabido las consecuencias, habría actuado de otra manera.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Siempre es fácil decirlo después.",
       "options": [
         "haber",
         "poder",
@@ -3451,12 +3451,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ lo que ___, no cambiaré de opinión.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Eres muy testarudo.",
+      "question": "A: Diga lo que ___, no cambiaré de opinión.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Eres muy testarudo.",
       "options": [
-        "Diga/digas",
-        "Dice/dices",
-        "Dirá/dirás",
-        "Diría/dirías"
+        "diga",
+        "dice",
+        "dirá",
+        "diría"
       ],
       "correct": "a"
     },
@@ -3501,12 +3501,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ lo que ___, siempre encuentra una excusa.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Así es su personalidad.",
+      "question": "A: Pase lo que ___, siempre encuentra una excusa.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Así es su personalidad.",
       "options": [
-        "Pase/pase",
-        "Pasa/pasa",
-        "Pasará/pasará",
-        "Pasaría/pasaría"
+        "pase",
+        "pasa",
+        "pasará",
+        "pasaría"
       ],
       "correct": "a"
     },
@@ -3531,12 +3531,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ¿Qué ___ si te ___ esa oportunidad?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: La aprovecharía sin duda.",
+      "question": "A: ¿Qué harías si te ___ esa oportunidad?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: La aprovecharía sin duda.",
       "options": [
-        "harías/dieran",
-        "haces/dan",
-        "harás/darán",
-        "hiciste/dieron"
+        "dieran",
+        "dan",
+        "darán",
+        "dieron"
       ],
       "correct": "a"
     },
@@ -3561,12 +3561,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ lo que ___, mantén la calma.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Intentaré hacerlo.",
+      "question": "A: Suceda lo que ___, mantén la calma.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Intentaré hacerlo.",
       "options": [
-        "Suceda/suceda",
-        "Sucede/sucede",
-        "Sucederá/sucederá",
-        "Sucedería/sucedería"
+        "suceda",
+        "sucede",
+        "sucederá",
+        "sucedería"
       ],
       "correct": "a"
     },
@@ -3591,12 +3591,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ lo que ___, no me convencerás.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Al menos lo intenté.",
+      "question": "A: Digas lo que ___, no me convencerás.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Al menos lo intenté.",
       "options": [
-        "Digas/digas",
-        "Dices/dices",
-        "Dirás/dirás",
-        "Dirías/dirías"
+        "digas",
+        "dices",
+        "dirás",
+        "dirías"
       ],
       "correct": "a"
     },
@@ -3631,12 +3631,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ como ___, hay que encontrar una solución.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Estoy de acuerdo.",
+      "question": "A: Sea como ___, hay que encontrar una solución.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Estoy de acuerdo.",
       "options": [
-        "Sea/sea",
-        "Es/es",
-        "Será/será",
-        "Sería/sería"
+        "sea",
+        "es",
+        "será",
+        "sería"
       ],
       "correct": "a"
     },
@@ -3661,12 +3661,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ lo que ___, mantendremos nuestra postura.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Respeto vuestra decisión.",
+      "question": "A: Pase lo que ___, mantendremos nuestra postura.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Respeto vuestra decisión.",
       "options": [
-        "Pase/pase",
-        "Pasa/pasa",
-        "Pasará/pasará",
-        "Pasaría/pasaría"
+        "pase",
+        "pasa",
+        "pasará",
+        "pasaría"
       ],
       "correct": "a"
     },
@@ -3701,12 +3701,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ lo que ___, no cambiaré de parecer.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Eres muy obstinado.",
+      "question": "A: Ocurra lo que ___, no cambiaré de parecer.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Eres muy obstinado.",
       "options": [
-        "Ocurra/ocurra",
-        "Ocurre/ocurre",
-        "Ocurrirá/ocurrirá",
-        "Ocurriría/ocurriría"
+        "ocurra",
+        "ocurre",
+        "ocurrirá",
+        "ocurriría"
       ],
       "correct": "a"
     },
@@ -3731,12 +3731,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ lo que ___, mantén la compostura.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Lo intentaré.",
+      "question": "A: Por mucho que ___, no lograrás hacerme cambiar de idea.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Al menos déjame explicarte.",
       "options": [
-        "Pase/pase",
-        "Pasa/pasa",
-        "Pasará/pasará",
-        "Pasaría/pasaría"
+        "insistas",
+        "insistes",
+        "insistirás",
+        "insistías"
       ],
       "correct": "a"
     },
@@ -3771,12 +3771,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ como ___, encontraremos una solución.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Eso espero.",
+      "question": "A: Sea como ___, saldremos adelante.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Eso espero.",
       "options": [
-        "Sea/sea",
-        "Es/es",
-        "Será/será",
-        "Sería/sería"
+        "sea",
+        "es",
+        "será",
+        "sería"
       ],
       "correct": "a"
     },
@@ -3801,12 +3801,12 @@ const QUESTION_BANKS = {
       "correct": "a"
     },
     {
-      "question": "A: ___ lo que ___, mantendremos el rumbo.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Es lo más sensato.",
+      "question": "A: Suceda lo que ___, mantendremos el rumbo.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: Es lo más sensato.",
       "options": [
-        "Suceda/suceda",
-        "Sucede/sucede",
-        "Sucederá/sucederá",
-        "Sucedería/sucedería"
+        "suceda",
+        "sucede",
+        "sucederá",
+        "sucedería"
       ],
       "correct": "a"
     },
