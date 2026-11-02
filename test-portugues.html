@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portuguese Placement Test | The Languages Academy</title>
+  
+  <meta name="description" content="Avalie seu nível de português brasileiro para estrangeiros com o teste interativo da The Languages Academy. Rápido, prático e gratuito!">
+  <meta property="og:title" content="Portuguese Placement Test | The Languages Academy">
+  <meta property="og:description" content="Descubra seu nível de português brasileiro agora mesmo!">
+  <meta property="og:image" content="assets/images/logo_banner.png">
+  
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Ambient Cosmic Glowing Background Mesh -->
+  <div class="cosmic-mesh">
+    <div class="glow-orb glow-blue"></div>
+    <div class="glow-orb glow-cyan"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header-v2">
+    <div class="container nav-container-v2">
+      <a href="index.html" class="brand-v2">
+        <img src="assets/images/logo-white.png" alt="Logo The Languages Academy" width="46" height="46">
+        <span>The Languages Academy</span>
+      </a>
+
+      <nav aria-label="Navegação">
+        <ul class="nav-menu-v2">
+          <li><a href="index.html" class="nav-link-v2">← Voltar ao Início</a></li>
+          <li><a href="test-ingles.html" class="nav-link-v2">🇬🇧 Teste de Inglês</a></li>
+          <li><a href="test-espanol.html" class="nav-link-v2">🇪🇸 Teste de Espanhol</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta-v2">
+        <a href="https://wa.me/5554991863491" target="_blank" rel="noopener" class="btn-v2 btn-v2-whatsapp" style="padding:0.65rem 1.4rem; font-size:0.9rem;">
+          WhatsApp Professor
+        </a>
+      </div>
+
+      <button type="button" class="menu-toggle-v2" id="menuToggle" aria-label="Abrir Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-v2" id="mobileNav">
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.8rem;">
+        <li><a href="index.html" class="nav-link-v2">← Voltar ao Início</a></li>
+        <li><a href="test-ingles.html" class="nav-link-v2">🇬🇧 Teste de Inglês</a></li>
+        <li><a href="test-espanol.html" class="nav-link-v2">🇪🇸 Teste de Espanhol</a></li>
+        <li style="margin-top:1rem;">
+          <a href="https://wa.me/5554991863491" target="_blank" class="btn-v2 btn-v2-whatsapp" style="width:100%;">
+            WhatsApp Professor
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- INTRO & QUIZ CONTAINER -->
+  <main style="padding: 4.5rem 0 6rem; flex-grow: 1; position: relative; z-index: 2;">
+    <div class="container">
+      <div class="section-header-v2">
+        <span class="section-tag-v2">PORTUGUESE FOR FOREIGNERS</span>
+        <h1 class="section-title-v2">🇧🇷 Teste de Português Brasileiro</h1>
+        <p class="section-subtitle-v2">
+          Avalie seu conhecimento do português do Brasil com 10 questões que cobrem desde cumprimentos até estruturas de concordância e subjuntivo.
+        </p>
+      </div>
+
+      <!-- APP MOUNT POINT -->
+      <div id="quizApp"></div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-v2" style="padding: 2.5rem 0; margin-top: auto;">
+    <div class="container" style="text-align: center; font-size: 0.9rem; color: #94A3B8;">
+      &copy; 2024 - 2026 <strong>The Languages Academy</strong> • Professor Luis Armando Molina. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initQuiz('portugues');
+    });
+  </script>
+</body>
+</html>
