@@ -150,6 +150,9 @@
     const glowTarget = document.getElementById('heroAmbientGlow');
     if (!heroVideo || !glowTarget) return;
 
+    glowTarget.style.opacity = '0.75';
+    glowTarget.style.filter = 'blur(55px)';
+
     // Pulse ambient glow on video play
     heroVideo.addEventListener('play', () => {
       glowTarget.style.opacity = '0.85';
@@ -157,7 +160,7 @@
     });
 
     heroVideo.addEventListener('pause', () => {
-      glowTarget.style.opacity = '0.4';
+      glowTarget.style.opacity = '0.5';
       glowTarget.style.filter = 'blur(45px)';
     });
   }

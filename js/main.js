@@ -13,43 +13,72 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, { passive: true });
 
-  // 2. Mobile Drawer Navigation
-  const menuToggle = document.getElementById('menuToggle');
-  const mobileNav = document.getElementById('mobileNav');
+  // 2. Header Dropdown Navigation
+  const navDropdownToggle = document.getElementById('navDropdownToggle');
+  const navDropdownPanel = document.getElementById('navDropdownPanel');
 
-  if (menuToggle && mobileNav) {
-    menuToggle.addEventListener('click', () => {
-      mobileNav.classList.toggle('open');
-      const isOpen = mobileNav.classList.contains('open');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      menuToggle.innerHTML = isOpen 
-        ? `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
-        : `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`;
+  if (navDropdownToggle && navDropdownPanel) {
+    const toggleMenu = () => {
+      const isOpen = navDropdownPanel.classList.toggle('open');
+      navDropdownToggle.classList.toggle('active', isOpen);
+      navDropdownToggle.setAttribute('aria-expanded', isOpen);
+    };
+
+    navDropdownToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
     });
 
-    mobileNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
+    // Close when clicking any link inside the panel
+    navDropdownPanel.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('click', () => {
+        navDropdownPanel.classList.remove('open');
+        navDropdownToggle.classList.remove('active');
+        navDropdownToggle.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navDropdownPanel.contains(e.target) && !navDropdownToggle.contains(e.target)) {
+        navDropdownPanel.classList.remove('open');
+        navDropdownToggle.classList.remove('active');
+        navDropdownToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navDropdownPanel.classList.contains('open')) {
+        navDropdownPanel.classList.remove('open');
+        navDropdownToggle.classList.remove('active');
+        navDropdownToggle.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
-  // 3. Interactive Video Players (Hero & Video Testimonials Lounge)
-  const videoContainers = document.querySelectorAll('.cinema-video-card, .hero-cinema-wrapper');
-  const allVideos = document.querySelectorAll('video');
+  // 3. Hero Video continuous loop playback
+  const heroVideo = document.getElementById('heroPromoVideo');
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.play().catch(() => {});
+  }
 
-  videoContainers.forEach(container => {
+  // Testimonials Video Players (Click-to-play with audio)
+  const testimonialCards = document.querySelectorAll('.cinema-video-card');
+  const allTestimonialVideos = document.querySelectorAll('.cinema-video-card video');
+
+  testimonialCards.forEach(container => {
     const video = container.querySelector('video');
     const overlay = container.querySelector('.cinema-overlay');
 
     if (video && overlay) {
       overlay.addEventListener('click', () => {
-        // Pause all other videos
-        allVideos.forEach(v => {
+        // Pause all other testimonial videos
+        allTestimonialVideos.forEach(v => {
           if (v !== video) {
             v.pause();
-            const parent = v.closest('.cinema-video-card, .hero-cinema-wrapper');
+            const parent = v.closest('.cinema-video-card');
             const parentOverlay = parent?.querySelector('.cinema-overlay');
             if (parentOverlay) parentOverlay.classList.remove('hidden');
           }
