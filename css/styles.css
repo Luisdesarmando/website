@@ -1051,6 +1051,45 @@ img, video {
   z-index: 5;
 }
 
+/* Story-Pills for Quick Mobile Readability (Reels/Stories style) */
+.about-story-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.1rem 0 1.3rem;
+}
+
+.story-pill-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.8rem 1.1rem;
+  border-radius: 12px;
+  font-size: 0.94rem;
+  color: #CBD5E1;
+  line-height: 1.5;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.story-pill-item:hover {
+  border-color: rgba(167, 66, 245, 0.4);
+  background: rgba(167, 66, 245, 0.06);
+  transform: translateX(4px);
+}
+
+.story-pill-item strong {
+  color: #FFFFFF;
+}
+
+.story-pill-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
 /* Quote 2.0 */
 .luxury-quote-box {
   margin: 2rem 0;
