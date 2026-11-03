@@ -691,7 +691,7 @@ img, video {
 /* Stats Counter Grid */
 .hero-stats-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-subtle);
