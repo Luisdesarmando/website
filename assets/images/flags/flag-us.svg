@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="64" height="48">
+  <defs>
+    <clipPath id="us-clip">
+      <rect width="640" height="480" rx="40"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#us-clip)">
+    <!-- 13 Stripes -->
+    <path fill="#bd3d44" d="M0 0h640v480H0z"/>
+    <path stroke="#fff" stroke-width="37" d="M0 55.4h640M0 129.2h640M0 203h640M0 277h640M0 350.8h640M0 424.6h640"/>
+    <!-- Canton -->
+    <path fill="#192f5d" d="M0 0h260v258.5H0z"/>
+    <!-- 50 Stars Grid Representation (Clean Vector Stars) -->
+    <g fill="#fff">
+      <g id="srow">
+        <circle cx="26" cy="24" r="9"/>
+        <circle cx="74" cy="24" r="9"/>
+        <circle cx="122" cy="24" r="9"/>
+        <circle cx="170" cy="24" r="9"/>
+        <circle cx="218" cy="24" r="9"/>
+        <circle cx="26" cy="72" r="9"/>
+        <circle cx="74" cy="72" r="9"/>
+        <circle cx="122" cy="72" r="9"/>
+        <circle cx="170" cy="72" r="9"/>
+        <circle cx="218" cy="72" r="9"/>
+        <circle cx="26" cy="120" r="9"/>
+        <circle cx="74" cy="120" r="9"/>
+        <circle cx="122" cy="120" r="9"/>
+        <circle cx="170" cy="120" r="9"/>
+        <circle cx="218" cy="120" r="9"/>
+        <circle cx="26" cy="168" r="9"/>
+        <circle cx="74" cy="168" r="9"/>
+        <circle cx="122" cy="168" r="9"/>
+        <circle cx="170" cy="168" r="9"/>
+        <circle cx="218" cy="168" r="9"/>
+        <circle cx="26" cy="216" r="9"/>
+        <circle cx="74" cy="216" r="9"/>
+        <circle cx="122" cy="216" r="9"/>
+        <circle cx="170" cy="216" r="9"/>
+        <circle cx="218" cy="216" r="9"/>
+      </g>
+      <g id="srow2">
+        <circle cx="50" cy="48" r="9"/>
+        <circle cx="98" cy="48" r="9"/>
+        <circle cx="146" cy="48" r="9"/>
+        <circle cx="194" cy="48" r="9"/>
+        <circle cx="50" cy="96" r="9"/>
+        <circle cx="98" cy="96" r="9"/>
+        <circle cx="146" cy="96" r="9"/>
+        <circle cx="194" cy="96" r="9"/>
+        <circle cx="50" cy="144" r="9"/>
+        <circle cx="98" cy="144" r="9"/>
+        <circle cx="146" cy="144" r="9"/>
+        <circle cx="194" cy="144" r="9"/>
+        <circle cx="50" cy="192" r="9"/>
+        <circle cx="98" cy="192" r="9"/>
+        <circle cx="146" cy="192" r="9"/>
+        <circle cx="194" cy="192" r="9"/>
+        <circle cx="50" cy="240" r="9"/>
+        <circle cx="98" cy="240" r="9"/>
+        <circle cx="146" cy="240" r="9"/>
+        <circle cx="194" cy="240" r="9"/>
+      </g>
+    </g>
+  </g>
+</svg>
