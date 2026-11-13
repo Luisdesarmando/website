@@ -5652,6 +5652,11 @@ function initQuiz(lang = 'ingles') {
   const container = document.getElementById('quizApp');
   if (!container) return;
 
+  const pageIntro = document.querySelector('.section-header-v2');
+  if (pageIntro) {
+    pageIntro.classList.remove('quiz-active-hidden');
+  }
+
   activeQuizState.language = lang;
   activeQuizState.isSubmitted = false;
   activeQuizState.currentIndex = 0;
@@ -5800,19 +5805,26 @@ function renderActiveQuizLayout() {
 
   const conf = QUIZ_CONFIGS[activeQuizState.language] || QUIZ_CONFIGS.ingles;
 
-  container.innerHTML = `
-    <!-- Floating / Sticky Timer Badge -->
-    <div id="quizTimerBadge" class="quiz-timer-badge">
-      <span class="timer-icon">⏱</span>
-      <span id="quizTimerText">15:00</span>
-    </div>
+  // Hide page intro header during active quiz for a clean, distraction-free screen
+  const pageIntro = document.querySelector('.section-header-v2');
+  if (pageIntro) {
+    pageIntro.classList.add('quiz-active-hidden');
+  }
 
+  container.innerHTML = `
     <div class="quiz-runner-container" id="quizRunnerCard">
-      <!-- Progress & Level Bar -->
+      <!-- Progress & Level Bar with Integrated Timer -->
       <div class="quiz-runner-header">
         <div class="quiz-progress-meta">
-          <span id="quizProgressCount">Questão 1 de 40</span>
-          <span class="quiz-level-pill" id="quizLevelPill">Nível A1</span>
+          <div class="quiz-progress-left">
+            <span id="quizProgressCount">Questão 1 de 40</span>
+            <span class="quiz-level-pill" id="quizLevelPill">Nível A1</span>
+          </div>
+          <!-- Integrated Non-Floating Timer Badge -->
+          <div id="quizTimerBadge" class="quiz-timer-badge">
+            <span class="timer-icon">⏱</span>
+            <span id="quizTimerText">15:00</span>
+          </div>
         </div>
         <div class="quiz-progress-track">
           <div class="quiz-progress-bar" id="quizProgressBar" style="width: 2.5%;"></div>
@@ -5826,28 +5838,42 @@ function renderActiveQuizLayout() {
 
       <!-- Navigation Bar -->
       <div class="quiz-nav-row">
-        <button type="button" class="btn-v2 btn-v2-glass" id="btnPrevQuestion" style="padding: 0.75rem 1.6rem;">
+        <button type="button" class="btn-v2 btn-v2-glass" id="btnPrevQuestion">
           ${conf.prevButtonText}
         </button>
         <div style="display:flex; gap:0.75rem; align-items:center;">
-          <button type="button" class="btn-v2 btn-v2-glass" id="btnNextQuestion" style="padding: 0.75rem 1.6rem;">
+          <button type="button" class="btn-v2 btn-v2-purple" id="btnNextQuestion">
             ${conf.nextButtonText}
           </button>
-          <button type="button" class="btn-v2 btn-v2-purple" id="btnFinishQuiz" style="padding: 0.75rem 1.6rem; display:none;">
+          <button type="button" class="btn-v2 btn-v2-purple" id="btnFinishQuiz" style="display:none;">
             ${conf.finishButtonText}
           </button>
         </div>
       </div>
 
-      <!-- Question Quick Navigation Matrix -->
+      <!-- Question Quick Navigation Matrix (Collapsible) -->
       <div class="quiz-matrix-wrap">
-        <div class="matrix-label">${conf.matrixLabel}</div>
+        <button type="button" class="matrix-toggle-btn" id="btnToggleMatrix">
+          <span class="matrix-toggle-text">🗺️ ${conf.matrixLabel || 'Mapa das 40 Questões'}</span>
+          <span class="matrix-toggle-icon">▾</span>
+        </button>
         <div class="quiz-matrix-grid" id="quizMatrixGrid">
           <!-- 40 pill dots -->
         </div>
       </div>
     </div>
   `;
+
+  const toggleBtn = document.getElementById('btnToggleMatrix');
+  const matrixGrid = document.getElementById('quizMatrixGrid');
+  if (toggleBtn && matrixGrid) {
+    toggleBtn.addEventListener('click', () => {
+      matrixGrid.classList.toggle('is-open');
+      const isOpen = matrixGrid.classList.contains('is-open');
+      const icon = toggleBtn.querySelector('.matrix-toggle-icon');
+      if (icon) icon.textContent = isOpen ? '▴' : '▾';
+    });
+  }
 
   document.getElementById('btnPrevQuestion').addEventListener('click', () => {
     if (activeQuizState.currentIndex > 0) {
@@ -5871,6 +5897,9 @@ function renderActiveQuizLayout() {
     }
     submitStratifiedQuiz();
   });
+
+  // Smoothly scroll to the top of the active quiz runner
+  window.scrollTo({ top: container.offsetTop - 70, behavior: 'smooth' });
 
   renderQuestion();
 }
