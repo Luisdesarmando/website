@@ -79,13 +79,20 @@ html {
   scroll-padding-top: 100px;
   background-color: var(--bg-deep);
   color: var(--text-body);
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
 }
 
 body {
   font-family: var(--font-body);
   background-color: var(--bg-deep);
   line-height: 1.65;
+  width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
+  position: relative;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -118,8 +125,12 @@ img, video {
 
 /* ================= BACKGROUND GLOWS / MESH ================= */
 .cosmic-mesh {
-  position: absolute;
-  inset: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
   pointer-events: none;
   overflow: hidden;
   z-index: 0;
@@ -2910,6 +2921,60 @@ textarea.form-control-v2 {
    ======================================================== */
 
 @media (max-width: 768px) {
+  /* Strict Viewport & Glow Containment */
+  html, body {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    position: relative !important;
+  }
+
+  .cosmic-mesh {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+  }
+
+  .glow-blue {
+    width: 220px !important;
+    height: 220px !important;
+    top: -40px !important;
+    right: 0 !important;
+    filter: blur(50px) !important;
+  }
+
+  .glow-cyan {
+    width: 180px !important;
+    height: 180px !important;
+    top: 30% !important;
+    left: 0 !important;
+    filter: blur(50px) !important;
+  }
+
+  .glow-purple {
+    width: 220px !important;
+    height: 220px !important;
+    bottom: 5% !important;
+    right: 0 !important;
+    filter: blur(50px) !important;
+  }
+
+  /* General Mobile Buttons */
+  .btn-v2 {
+    white-space: normal !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    font-size: 0.88rem !important;
+    padding: 0.75rem 1.15rem !important;
+    word-break: normal !important;
+  }
+
+
   /* 1. Global Spacing & Typography */
   html {
     scroll-padding-top: 70px;
@@ -3040,7 +3105,9 @@ textarea.form-control-v2 {
 
   /* 4. Hero Section */
   .hero-v2-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
     gap: 1.8rem;
   }
 
@@ -3175,6 +3242,7 @@ textarea.form-control-v2 {
     gap: 0.4rem;
     margin-bottom: 1.4rem;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .lang-tab-btn {
@@ -3190,10 +3258,20 @@ textarea.form-control-v2 {
   }
 
   .explorer-showcase-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     padding: 1.35rem 1.1rem;
     gap: 1.5rem;
     border-radius: 18px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .explorer-card-left, .explorer-card-right {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .explorer-card-left span {
@@ -3252,13 +3330,14 @@ textarea.form-control-v2 {
   }
 
   .explorer-levels-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.45rem;
     margin: 0.85rem 0;
   }
 
   .level-badge {
-    padding: 0.5rem 0.35rem;
+    min-width: 0;
+    padding: 0.45rem 0.25rem;
     border-radius: 10px;
   }
 
@@ -3272,7 +3351,9 @@ textarea.form-control-v2 {
 
   /* 7. Metodologia / Pillars */
   .pillars-grid-v2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
     gap: 1rem;
   }
 
@@ -3305,17 +3386,34 @@ textarea.form-control-v2 {
 
   /* 8. Sobre o Professor (2 Photos Side-by-Side like PC!) */
   .about-editorial-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
     gap: 1.6rem;
   }
 
+  .about-parallax-stage, .about-narrative-content {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
   .dual-photo-wrapper {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.6rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    gap: 0.5rem;
+    box-sizing: border-box;
   }
 
   .photo-card-v2 {
     border-radius: 14px;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .photo-card-v2 img {
@@ -3324,22 +3422,25 @@ textarea.form-control-v2 {
   }
 
   .photo-tag-chip {
-    font-size: 0.62rem;
-    padding: 0.22rem 0.45rem;
-    bottom: 7px;
-    left: 6px;
-    right: 6px;
+    font-size: 0.58rem;
+    padding: 0.2rem 0.32rem;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
     text-align: center;
     border-radius: 6px;
     letter-spacing: 0;
-    line-height: 1.25;
+    line-height: 1.2;
+    white-space: normal;
+    max-width: calc(100% - 10px);
+    box-sizing: border-box;
   }
 
   .floating-crest-badge {
     font-size: 0.7rem;
     padding: 0.3rem 0.75rem;
     top: -10px;
-    max-width: 90%;
+    max-width: calc(100% - 20px);
     white-space: normal;
     text-align: center;
     line-height: 1.3;
@@ -3353,6 +3454,8 @@ textarea.form-control-v2 {
   .about-story-pills {
     gap: 0.55rem;
     margin: 0.85rem 0 1rem;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .story-pill-item {
@@ -3360,6 +3463,9 @@ textarea.form-control-v2 {
     font-size: 0.82rem;
     gap: 0.6rem;
     border-radius: 10px;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .story-pill-icon {
@@ -3370,6 +3476,9 @@ textarea.form-control-v2 {
     margin: 1.1rem 0;
     padding: 0.85rem 1rem;
     border-radius: 0 12px 12px 0;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .luxury-quote-box blockquote {
@@ -3383,33 +3492,52 @@ textarea.form-control-v2 {
   }
 
   .credentials-grid-v2 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
     gap: 0.5rem;
     margin: 1rem 0;
   }
 
   .cred-box {
-    padding: 0.6rem 0.7rem;
+    padding: 0.6rem 0.6rem;
     border-radius: 11px;
     gap: 0.55rem;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .cred-box svg {
     width: 18px;
     height: 18px;
+    flex-shrink: 0;
+  }
+
+  .cred-text {
+    min-width: 0;
+    overflow: hidden;
   }
 
   .cred-text h5 {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .cred-text p {
-    font-size: 0.68rem;
+    font-size: 0.65rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   /* 9. Video Cinema Lounge (Depoimentos) */
   .cinema-grid-v2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
     gap: 1.15rem;
   }
 
@@ -3455,7 +3583,9 @@ textarea.form-control-v2 {
 
   /* 10. Quizzes Hub */
   .quiz-cards-grid-v2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
     gap: 1.15rem;
   }
 
@@ -3516,7 +3646,9 @@ textarea.form-control-v2 {
 
   /* 11. Planos de Preços */
   .pricing-deck-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
     gap: 1.15rem;
   }
 
@@ -3641,7 +3773,9 @@ textarea.form-control-v2 {
 
   /* 13. Contact Section */
   .contact-grid-v2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
     gap: 1.35rem;
   }
 
@@ -3727,6 +3861,10 @@ textarea.form-control-v2 {
     margin-top: 1.8rem;
   }
 
+  .banner-wave-svg {
+    width: 100% !important;
+  }
+
   .banner-quote-text {
     font-size: 0.98rem;
     line-height: 1.55;
@@ -3762,7 +3900,9 @@ textarea.form-control-v2 {
   }
 
   .footer-v2-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
     gap: 1.6rem;
     margin-bottom: 1.6rem;
   }
