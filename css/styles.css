@@ -4024,129 +4024,159 @@ textarea.form-control-v2 {
   }
 
   /* 17. Diagnostic Placement Tests (test-*.html) */
+  .header-v2 {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+  }
+
+  .nav-container-v2 {
+    height: 48px !important;
+  }
+
+  .brand-v2 img {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .brand-v2 span {
+    font-size: 0.82rem !important;
+  }
+
+  .header-right-v2 {
+    gap: 0.35rem !important;
+  }
+
   .header-right-v2 .btn-v2 {
     white-space: nowrap !important;
-    padding: 0.38rem 0.8rem !important;
-    font-size: 0.82rem !important;
+    padding: 0.28rem 0.65rem !important;
+    font-size: 0.76rem !important;
     border-radius: 20px !important;
   }
 
   .test-title-flag {
-    width: 32px;
-    height: 22px;
-    margin-right: 0.45rem;
+    width: 28px;
+    height: 20px;
+    margin-right: 0.35rem;
   }
 
   .quiz-welcome-card {
-    padding: 1.4rem 1.1rem;
-    border-radius: 18px;
+    padding: 1.2rem 0.95rem;
+    border-radius: 16px;
   }
 
   .quiz-welcome-title {
-    font-size: 1.35rem;
-    margin-bottom: 0.65rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
   }
 
   .quiz-welcome-desc {
-    font-size: 0.84rem;
-    line-height: 1.5;
+    font-size: 0.82rem;
+    line-height: 1.45;
   }
 
+  /* Compact & Refined Mobile Runner */
   .quiz-runner-container {
-    padding: 1.25rem 1.05rem !important;
-    border-radius: 20px !important;
+    padding: 0.95rem 0.85rem !important;
+    border-radius: 16px !important;
     margin: 0 auto !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
   }
 
   .quiz-runner-header {
-    margin-bottom: 1.1rem !important;
+    margin-bottom: 0.85rem !important;
   }
 
   .quiz-progress-meta {
-    margin-bottom: 0.65rem !important;
+    margin-bottom: 0.45rem !important;
+    gap: 0.35rem !important;
   }
 
   .quiz-progress-left {
-    gap: 0.45rem !important;
+    gap: 0.4rem !important;
   }
 
   #quizProgressCount {
-    font-size: 0.82rem !important;
+    font-size: 0.76rem !important;
     font-weight: 700 !important;
     color: #E2E8F0 !important;
   }
 
   .quiz-level-pill {
-    font-size: 0.68rem !important;
-    padding: 0.18rem 0.5rem !important;
+    font-size: 0.64rem !important;
+    padding: 0.15rem 0.42rem !important;
     border-radius: 9999px !important;
   }
 
   .quiz-timer-badge {
-    font-size: 0.84rem !important;
-    font-weight: 800 !important;
-    padding: 0.28rem 0.72rem !important;
+    font-size: 0.76rem !important;
+    font-weight: 700 !important;
+    padding: 0.22rem 0.55rem !important;
     border-radius: 9999px !important;
+    gap: 0.3rem !important;
     box-shadow: 0 2px 10px rgba(167, 66, 245, 0.35) !important;
   }
 
+  .quiz-progress-track {
+    height: 5px !important;
+  }
+
   .quiz-question-box {
-    padding: 1.15rem 1rem !important;
-    margin-bottom: 1.2rem !important;
-    border-radius: 14px !important;
+    padding: 0.85rem 0.85rem !important;
+    margin-bottom: 0.85rem !important;
+    border-radius: 12px !important;
     border-left: 3px solid #A742F5 !important;
   }
 
   .quiz-q-title {
     display: flex !important;
     align-items: flex-start !important;
-    gap: 0.6rem !important;
-    margin-bottom: 1rem !important;
+    gap: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .quiz-q-num {
-    font-size: 1.15rem !important;
+    font-size: 0.95rem !important;
   }
 
   .quiz-q-text {
-    font-size: 1.05rem !important;
-    line-height: 1.45 !important;
+    font-size: 0.96rem !important;
+    line-height: 1.4 !important;
   }
 
   .quiz-options-list {
-    gap: 0.65rem !important;
+    gap: 0.45rem !important;
   }
 
   .quiz-option-card {
-    padding: 0.75rem 0.9rem !important;
-    gap: 0.75rem !important;
-    border-radius: 12px !important;
-    min-height: 48px !important;
+    padding: 0.55rem 0.75rem !important;
+    gap: 0.65rem !important;
+    border-radius: 10px !important;
+    min-height: 40px !important;
     box-sizing: border-box !important;
   }
 
   .option-bubble {
-    width: 28px !important;
-    height: 28px !important;
-    font-size: 0.82rem !important;
+    width: 24px !important;
+    height: 24px !important;
+    font-size: 0.75rem !important;
   }
 
   .option-label {
-    font-size: 0.92rem !important;
+    font-size: 0.86rem !important;
   }
 
   .quiz-nav-row {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
-    gap: 0.65rem !important;
-    margin-bottom: 1.1rem !important;
+    gap: 0.5rem !important;
+    margin-bottom: 0.85rem !important;
   }
 
   .quiz-nav-row .btn-v2 {
-    padding: 0.7rem 1.15rem !important;
-    font-size: 0.88rem !important;
+    padding: 0.55rem 0.95rem !important;
+    font-size: 0.82rem !important;
     border-radius: 9999px !important;
   }
 
@@ -4157,37 +4187,53 @@ textarea.form-control-v2 {
     box-shadow: 0 4px 15px rgba(167, 66, 245, 0.4) !important;
   }
 
+  /* Compact 10x4 Matrix Grid (10 questions per row = exactly 1 row per CEFR level!) */
   .quiz-matrix-wrap {
-    padding-top: 0.9rem !important;
+    padding-top: 0.75rem !important;
+  }
+
+  .matrix-toggle-btn {
+    padding: 0.45rem 0.75rem !important;
+    font-size: 0.76rem !important;
+    border-radius: 10px !important;
   }
 
   .quiz-matrix-grid {
     display: none;
-    gap: 0.35rem !important;
-    justify-content: center !important;
-    margin-top: 0.75rem !important;
+    margin-top: 0.65rem !important;
   }
 
   .quiz-matrix-grid.is-open {
-    display: flex !important;
-    flex-wrap: wrap !important;
+    display: grid !important;
+    grid-template-columns: repeat(10, minmax(0, 1fr)) !important;
+    gap: 4px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .matrix-dot {
-    width: 30px !important;
-    height: 30px !important;
-    font-size: 0.72rem !important;
-    border-radius: 7px !important;
+    width: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    height: auto !important;
+    min-height: 24px !important;
+    font-size: 0.65rem !important;
+    border-radius: 5px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
   }
 
   .quiz-results-card {
-    padding: 1.4rem 1.1rem !important;
-    border-radius: 18px !important;
+    padding: 1.25rem 0.95rem !important;
+    border-radius: 16px !important;
   }
 
   /* 18. Policy / Terms Pages & Quiz Pages */
-  main[style*="padding: 4.5rem"] {
-    padding: 1rem 0 2.5rem !important;
+  main[style*="padding: 4.5rem"], main {
+    padding: 0.5rem 0 1.6rem !important;
   }
 }
 
