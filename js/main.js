@@ -266,13 +266,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const firstName = document.getElementById('cfFirstName')?.value.trim();
-      const lastName = document.getElementById('cfLastName')?.value.trim();
+      const fullName = (document.getElementById('cfFullName')?.value || ((document.getElementById('cfFirstName')?.value || '') + ' ' + (document.getElementById('cfLastName')?.value || ''))).trim();
       const email = document.getElementById('cfEmail')?.value.trim();
       const subject = document.getElementById('cfSubject')?.value;
       const message = document.getElementById('cfMessage')?.value.trim();
 
-      const text = `Olá, Professor Luis! Nova mensagem recebida pelo site The Languages Academy:%0A%0A*Nome:* ${encodeURIComponent(firstName + ' ' + lastName)}%0A*E-mail:* ${encodeURIComponent(email)}%0A*Assunto:* ${encodeURIComponent(subject)}%0A*Mensagem:* ${encodeURIComponent(message)}`;
+      const text = `Olá, Professor Luis! Nova mensagem recebida pelo site The Languages Academy:%0A%0A*Nome:* ${encodeURIComponent(fullName)}%0A*E-mail:* ${encodeURIComponent(email)}%0A*Assunto:* ${encodeURIComponent(subject)}%0A*Mensagem:* ${encodeURIComponent(message)}`;
 
       window.open(`https://wa.me/5554991863491?text=${text}`, '_blank');
       

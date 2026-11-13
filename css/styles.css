@@ -1852,7 +1852,7 @@ textarea.form-control-v2 {
   }
 
   .hero-stats-row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer-v2-grid {
@@ -1860,48 +1860,7 @@ textarea.form-control-v2 {
   }
 }
 
-@media (max-width: 768px) {
-  .hero-v2-title {
-    font-size: 2.3rem;
-  }
 
-  .nav-dropdown-panel-v2 {
-    width: 330px;
-    right: -10px;
-    padding: 1.3rem;
-    max-height: 82vh;
-    overflow-y: auto;
-  }
-
-  .dropdown-panel-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-
-  .brand-v2 span {
-    font-size: 1.05rem;
-  }
-
-  .nav-quick-cta {
-    display: none;
-  }
-
-  .dual-photo-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .pricing-deck-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .form-row-v2 {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-v2-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* ================= SIGNATURE FOOTER QUOTE BANNER ================= */
 .footer-quote-banner {
@@ -2651,4 +2610,1335 @@ textarea.form-control-v2 {
 .quiz-picker-item:hover .picker-item-arrow {
   transform: translateX(5px);
   color: #C084FC;
+}
+
+/* ================= TRILINGUAL SHOWCASE BANNER ================= */
+.trilingual-showcase-banner {
+  position: relative;
+  max-width: 1060px;
+  margin: 0 auto 3rem auto;
+  border-radius: 24px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(167, 66, 245, 0.45) 0%, rgba(37, 99, 235, 0.35) 50%, rgba(245, 158, 11, 0.35) 100%);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.65), 0 0 35px rgba(167, 66, 245, 0.18);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.trilingual-showcase-banner:hover {
+  box-shadow: 0 30px 65px rgba(0, 0, 0, 0.75), 0 0 50px rgba(167, 66, 245, 0.28);
+}
+
+.trilingual-image-wrapper {
+  position: relative;
+  border-radius: 23px;
+  overflow: hidden;
+  background: #080D1C;
+}
+
+.trilingual-banner-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 7.6;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.trilingual-showcase-banner:hover .trilingual-banner-img {
+  transform: scale(1.02);
+}
+
+.trilingual-banner-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(180deg, rgba(6, 9, 19, 0) 30%, rgba(6, 9, 19, 0.75) 75%, rgba(6, 9, 19, 0.95) 100%);
+  padding: 2.2rem 2.5rem;
+  pointer-events: none;
+}
+
+.trilingual-banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+}
+
+.trilingual-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #E2E8F0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 0.65rem;
+}
+
+.trilingual-headline {
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 0.35rem;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
+}
+
+.trilingual-subline {
+  color: #CBD5E1;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  margin: 0;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+/* ================= ENHANCED QUIZ CARDS WITH VECTOR FLAGS & FEATURES ================= */
+.quiz-flag-v2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.quiz-flag-img {
+  width: 72px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.quiz-card-v2:hover .quiz-flag-img {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.65), 0 0 25px rgba(56, 189, 248, 0.35);
+}
+
+.quiz-pill-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94A3B8;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  margin-bottom: 1.4rem;
+}
+
+.quiz-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.quiz-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #CBD5E1;
+  line-height: 1.45;
+}
+
+.quiz-feature-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.16);
+  border: 1px solid #10B981;
+  color: #10B981;
+  font-size: 0.72rem;
+  font-weight: 800;
+  margin-top: 1px;
+}
+
+.picker-flag-img {
+  width: 38px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+/* ================= COMPACT VECTOR FLAGS FOR TABS, NAV & FOOTER ================= */
+.nav-flag-img {
+  width: 22px;
+  height: 16px;
+  border-radius: 3px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tab-flag-img {
+  width: 26px;
+  height: 18px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.35rem;
+}
+
+.footer-flag-img {
+  width: 20px;
+  height: 14px;
+  border-radius: 3px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.45rem;
+}
+/* ================= PRICING GUARANTEE BANNER & STUDENT TAGS ================= */
+.pricing-guarantee-banner {
+  max-width: 1080px;
+  margin: 3.5rem auto 0 auto;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.guarantee-badge {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid #10B981;
+  color: #10B981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guarantee-content {
+  flex-grow: 1;
+}
+
+.guarantee-content h4 {
+  color: #FFFFFF;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.guarantee-content p {
+  color: #94A3B8;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.student-lang-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #CBD5E1;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  margin-left: 0.6rem;
+}
+
+
+
+/* ================= TEST PAGE TITLE FLAGS & INLINE FLAGS ================= */
+.test-title-flag {
+  width: 44px;
+  height: 31px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.65rem;
+  margin-top: -4px;
+}
+
+.quiz-inline-flag {
+  width: 24px;
+  height: 17px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.45rem;
+  margin-top: -2px;
+}
+
+
+
+
+
+/* ========================================================
+   MASTER RESPONSIVE STYLESHEET (MOBILE & TABLET)
+   The Languages Academy - Proportional, Structured & Elegant
+   ======================================================== */
+
+@media (max-width: 768px) {
+  /* 1. Global Spacing & Typography */
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  body {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .container {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
+  /* Compact section vertical paddings (removes massive empty space) */
+  .hero-v2 {
+    padding: 2.4rem 0 2rem;
+    min-height: auto;
+  }
+
+  .explorer-section,
+  .pillars-section,
+  .about-section-v2,
+  .cinema-section,
+  .quizzes-hub-section,
+  .pricing-section-v2,
+  .faq-section-v2,
+  .contact-section-v2 {
+    padding: 2.8rem 0;
+  }
+
+  /* 2. Scaled Section Headers */
+  .section-header-v2 {
+    margin: 0 auto 1.6rem;
+    max-width: 100%;
+  }
+
+  .section-header-v2.text-left {
+    margin: 0 0 1.25rem;
+  }
+
+  .section-tag-v2 {
+    font-size: 0.7rem;
+    padding: 0.28rem 0.75rem;
+    margin-bottom: 0.55rem;
+    letter-spacing: 0.05em;
+  }
+
+  .section-title-v2 {
+    font-size: 1.65rem;
+    line-height: 1.24;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle-v2 {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  /* 3. Header & Dropdown Navigation */
+  .nav-container-v2 {
+    height: 56px;
+  }
+
+  .brand-v2 {
+    gap: 0.5rem;
+  }
+
+  .brand-v2 img {
+    height: 30px;
+  }
+
+  .brand-v2 span {
+    font-size: 0.92rem;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-quick-cta {
+    display: none;
+  }
+
+  .nav-menu-btn-v2 {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.82rem;
+    gap: 0.45rem;
+  }
+
+  /* Full screen-aware dropdown panel */
+  .nav-dropdown-panel-v2 {
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    max-width: none;
+    max-height: 82vh;
+    padding: 1.15rem;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 25px rgba(37, 99, 235, 0.25);
+  }
+
+  .dropdown-panel-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .dropdown-col-title {
+    font-size: 0.68rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .dropdown-links-list {
+    gap: 0.2rem;
+  }
+
+  .dropdown-item-link {
+    padding: 0.45rem 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
+  .dropdown-panel-footer {
+    margin-top: 0.9rem;
+    padding-top: 0.85rem;
+  }
+
+  /* 4. Hero Section */
+  .hero-v2-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .hero-v2-content {
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .pill-glow-tag {
+    font-size: 0.75rem;
+    padding: 0.32rem 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .hero-v2-title {
+    font-size: 1.85rem;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+
+  .hero-v2-description {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    max-width: 100%;
+  }
+
+  .hero-v2-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.65rem;
+    margin-top: 0.2rem;
+  }
+
+  .hero-v2-actions .btn-v2 {
+    width: 100%;
+    justify-content: center;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.92rem;
+  }
+
+  /* Hero Stats: 3 Symmetrical Mini-Cards (PC feeling on mobile) */
+  .hero-stats-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .stat-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 0.65rem 0.3rem;
+    text-align: center;
+  }
+
+  .stat-box h4 {
+    font-size: 1.3rem;
+    justify-content: center;
+    gap: 0.1rem;
+  }
+
+  .stat-box p {
+    font-size: 0.68rem;
+    line-height: 1.25;
+    margin-top: 0.15rem;
+  }
+
+  /* Hero Video & Safe Badges */
+  .hero-cinema-stage {
+    margin-top: 0.4rem;
+  }
+
+  .hero-cinema-wrapper {
+    border-radius: 18px;
+  }
+
+  .parallax-badge {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.7rem;
+    gap: 0.4rem;
+  }
+
+  .badge-top-right {
+    top: -8px;
+    right: 8px;
+  }
+
+  .badge-bottom-left {
+    bottom: -8px;
+    left: 8px;
+  }
+
+  /* 5. Trilingual Showcase Banner */
+  .trilingual-showcase-banner {
+    margin-bottom: 1.6rem;
+    border-radius: 18px;
+  }
+
+  .trilingual-image-wrapper {
+    border-radius: 17px;
+  }
+
+  .trilingual-banner-img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .trilingual-banner-overlay {
+    padding: 1rem 1.1rem;
+  }
+
+  .trilingual-pill {
+    font-size: 0.68rem;
+    padding: 0.28rem 0.7rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .trilingual-headline {
+    font-size: 1.05rem;
+    line-height: 1.25;
+    margin-bottom: 0.2rem;
+  }
+
+  .trilingual-subline {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  /* 6. Language Explorer (Cursos) */
+  .explorer-tabs-nav {
+    gap: 0.4rem;
+    margin-bottom: 1.4rem;
+    justify-content: center;
+  }
+
+  .lang-tab-btn {
+    padding: 0.48rem 0.8rem;
+    font-size: 0.82rem;
+    gap: 0.4rem;
+  }
+
+  .tab-flag-img {
+    width: 19px;
+    height: 13px;
+    margin-right: 0.2rem;
+  }
+
+  .explorer-showcase-card {
+    grid-template-columns: 1fr;
+    padding: 1.35rem 1.1rem;
+    gap: 1.5rem;
+    border-radius: 18px;
+  }
+
+  .explorer-card-left span {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .explorer-card-left h3 {
+    font-size: 1.35rem !important;
+    margin-bottom: 0.65rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .explorer-card-left p {
+    font-size: 0.86rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .explorer-features-list {
+    gap: 0.6rem;
+    margin: 1rem 0 1.2rem;
+  }
+
+  .explorer-features-list li {
+    font-size: 0.84rem;
+    gap: 0.55rem;
+    line-height: 1.4;
+  }
+
+  .explorer-features-list svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .explorer-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.55rem;
+  }
+
+  .explorer-actions .btn-v2 {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.88rem;
+  }
+
+  .explorer-visual-box {
+    padding: 1.1rem 0.95rem;
+    border-radius: 15px;
+  }
+
+  .explorer-visual-box span {
+    font-size: 0.9rem !important;
+  }
+
+  .explorer-levels-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.45rem;
+    margin: 0.85rem 0;
+  }
+
+  .level-badge {
+    padding: 0.5rem 0.35rem;
+    border-radius: 10px;
+  }
+
+  .level-code {
+    font-size: 1.05rem;
+  }
+
+  .level-label {
+    font-size: 0.65rem;
+  }
+
+  /* 7. Metodologia / Pillars */
+  .pillars-grid-v2 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pillar-card-v2 {
+    padding: 1.35rem 1.15rem;
+    border-radius: 18px;
+  }
+
+  .pillar-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    margin-bottom: 0.9rem;
+  }
+
+  .pillar-icon-box svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .pillar-card-v2 h3 {
+    font-size: 1.18rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .pillar-card-v2 p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  /* 8. Sobre o Professor (2 Photos Side-by-Side like PC!) */
+  .about-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .dual-photo-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+  }
+
+  .photo-card-v2 {
+    border-radius: 14px;
+  }
+
+  .photo-card-v2 img {
+    height: 195px;
+    object-fit: cover;
+  }
+
+  .photo-tag-chip {
+    font-size: 0.62rem;
+    padding: 0.22rem 0.45rem;
+    bottom: 7px;
+    left: 6px;
+    right: 6px;
+    text-align: center;
+    border-radius: 6px;
+    letter-spacing: 0;
+    line-height: 1.25;
+  }
+
+  .floating-crest-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.75rem;
+    top: -10px;
+    max-width: 90%;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .about-narrative-content p {
+    font-size: 0.86rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .about-story-pills {
+    gap: 0.55rem;
+    margin: 0.85rem 0 1rem;
+  }
+
+  .story-pill-item {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.82rem;
+    gap: 0.6rem;
+    border-radius: 10px;
+  }
+
+  .story-pill-icon {
+    font-size: 1.05rem;
+  }
+
+  .luxury-quote-box {
+    margin: 1.1rem 0;
+    padding: 0.85rem 1rem;
+    border-radius: 0 12px 12px 0;
+  }
+
+  .luxury-quote-box blockquote {
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  .luxury-quote-box cite {
+    font-size: 0.74rem;
+    margin-top: 0.45rem;
+  }
+
+  .credentials-grid-v2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .cred-box {
+    padding: 0.6rem 0.7rem;
+    border-radius: 11px;
+    gap: 0.55rem;
+  }
+
+  .cred-box svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cred-text h5 {
+    font-size: 0.8rem;
+  }
+
+  .cred-text p {
+    font-size: 0.68rem;
+  }
+
+  /* 9. Video Cinema Lounge (Depoimentos) */
+  .cinema-grid-v2 {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .cinema-video-card {
+    border-radius: 18px;
+  }
+
+  .video-frame-container {
+    max-height: 310px;
+  }
+
+  .play-aura-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-aura-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cinema-card-info {
+    padding: 1.1rem 1.15rem;
+  }
+
+  .student-meta h4 {
+    font-size: 1.02rem;
+  }
+
+  .student-lang-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .stars-rating {
+    font-size: 0.82rem;
+  }
+
+  .student-quote-v2 {
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+
+  /* 10. Quizzes Hub */
+  .quiz-cards-grid-v2 {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .quiz-card-v2 {
+    padding: 1.4rem 1.15rem;
+    border-radius: 18px;
+  }
+
+  .quiz-flag-v2 {
+    margin-bottom: 0.85rem;
+  }
+
+  .quiz-flag-img {
+    width: 52px;
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  .quiz-card-v2 h3 {
+    font-size: 1.18rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .quiz-card-v2 p {
+    font-size: 0.84rem;
+  }
+
+  .quiz-pill-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.95rem;
+  }
+
+  .quiz-features-list {
+    gap: 0.55rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .quiz-features-list li {
+    font-size: 0.82rem;
+    gap: 0.5rem;
+    line-height: 1.35;
+  }
+
+  .quiz-feature-check {
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    font-size: 0.65rem;
+  }
+
+  .quiz-card-v2 .btn-v2 {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.88rem;
+  }
+
+  /* 11. Planos de Preços */
+  .pricing-deck-grid {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .pricing-card-v2 {
+    padding: 1.45rem 1.15rem;
+    border-radius: 18px;
+  }
+
+  .deck-badge-popular {
+    font-size: 0.66rem;
+    padding: 0.25rem 0.8rem;
+    top: -10px;
+  }
+
+  .deck-plan-name {
+    font-size: 1.12rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .deck-hours-tag {
+    font-size: 0.74rem;
+    padding: 0.22rem 0.6rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .deck-price-box {
+    margin-bottom: 1rem;
+  }
+
+  .deck-currency {
+    font-size: 0.92rem;
+  }
+
+  .deck-amount {
+    font-size: 2.05rem;
+  }
+
+  .deck-period {
+    font-size: 0.8rem;
+  }
+
+  .deck-hourly-badge {
+    font-size: 0.74rem;
+    padding: 0.18rem 0.6rem;
+    margin-top: -0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .deck-features-list {
+    gap: 0.55rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .deck-features-list li {
+    font-size: 0.82rem;
+    gap: 0.5rem;
+    line-height: 1.35;
+  }
+
+  .deck-features-list svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .select-plan-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.88rem;
+  }
+
+  .pricing-guarantee-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.85rem;
+    padding: 1.1rem 1rem;
+    margin-top: 1.6rem;
+    border-radius: 15px;
+  }
+
+  .guarantee-badge {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .guarantee-badge svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .guarantee-content h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .guarantee-content p {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  /* 12. FAQ Section */
+  .faq-container-v2 {
+    gap: 0.65rem;
+  }
+
+  .faq-item-v2 {
+    border-radius: 13px;
+  }
+
+  .faq-question-v2 {
+    padding: 0.95rem 1.1rem;
+    font-size: 0.9rem;
+    gap: 0.7rem;
+  }
+
+  .faq-answer-v2 {
+    padding: 0 1.1rem 1.05rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  /* 13. Contact Section */
+  .contact-grid-v2 {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+
+  .contact-info-card-v2 {
+    padding: 1.4rem 1.15rem;
+    border-radius: 18px;
+  }
+
+  .contact-info-card-v2 h3 {
+    font-size: 1.35rem !important;
+    margin-bottom: 0.45rem !important;
+  }
+
+  .contact-info-card-v2 p {
+    font-size: 0.85rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+
+  .contact-channels-v2 {
+    gap: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .channel-item-v2 {
+    font-size: 0.84rem;
+    gap: 0.7rem;
+  }
+
+  .channel-item-v2 svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .contact-form-card-v2 {
+    padding: 1.4rem 1.15rem;
+    border-radius: 18px;
+  }
+
+  .contact-form-card-v2 h3 {
+    font-size: 1.32rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .contact-form-card-v2 p {
+    font-size: 0.84rem !important;
+    margin-bottom: 1.15rem !important;
+  }
+
+  .form-row-v2 {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .form-group-v2 {
+    margin-bottom: 0.85rem;
+  }
+
+  .form-group-v2 label {
+    font-size: 0.78rem;
+    margin-bottom: 0.28rem;
+  }
+
+  .form-control-v2 {
+    padding: 0.68rem 0.8rem;
+    font-size: 0.86rem;
+    border-radius: 10px;
+  }
+
+  textarea.form-control-v2 {
+    min-height: 95px;
+  }
+
+  .contact-form-card-v2 button[type="submit"] {
+    width: 100%;
+    justify-content: center;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* 14. Signature Footer Quote Banner & Footer */
+  .footer-quote-banner {
+    padding: 2.6rem 1.1rem 1.8rem;
+    margin-top: 1.8rem;
+  }
+
+  .banner-quote-text {
+    font-size: 0.98rem;
+    line-height: 1.55;
+    margin-bottom: 1.1rem;
+  }
+
+  .banner-author {
+    font-size: 0.8rem;
+    margin-top: 0.55rem;
+  }
+
+  .banner-social-row {
+    gap: 0.75rem;
+    margin: 1.15rem 0 1rem;
+  }
+
+  .social-icon-circle {
+    width: 38px;
+    height: 38px;
+  }
+
+  .social-icon-circle svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .banner-copyright {
+    font-size: 0.75rem;
+  }
+
+  .footer-v2 {
+    padding: 2.5rem 0 1.6rem;
+  }
+
+  .footer-v2-grid {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-v2-brand h3 {
+    font-size: 1.12rem;
+  }
+
+  .footer-v2-brand p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  .footer-v2-col h4 {
+    font-size: 0.88rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .footer-v2-links {
+    gap: 0.5rem;
+  }
+
+  .footer-v2-links li a {
+    font-size: 0.82rem;
+  }
+
+  .footer-v2-bottom {
+    padding-top: 1.1rem;
+    font-size: 0.76rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* 15. Modals */
+  .modal-overlay {
+    padding: 0.85rem;
+  }
+
+  .modal-card-v2 {
+    padding: 1.5rem 1.1rem !important;
+    border-radius: 18px;
+  }
+
+  #modalTitle,
+  #quizPickerTitle {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .modal-card-v2 p {
+    font-size: 0.82rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .quiz-picker-card {
+    padding: 1.5rem 1.1rem !important;
+  }
+
+  .quiz-picker-item {
+    padding: 0.8rem 0.85rem;
+    gap: 0.75rem;
+    border-radius: 12px;
+  }
+
+  .picker-flag-img {
+    width: 32px;
+    height: 23px;
+  }
+
+  .picker-item-info h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .picker-item-info p {
+    font-size: 0.76rem;
+  }
+
+  /* 16. Floating WhatsApp Button */
+  .whatsapp-radar-btn {
+    width: 48px;
+    height: 48px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .whatsapp-radar-btn svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .whatsapp-radar-tooltip {
+    display: none !important;
+  }
+
+  /* 17. Diagnostic Placement Tests (test-*.html) */
+  .test-title-flag {
+    width: 32px;
+    height: 22px;
+    margin-right: 0.45rem;
+  }
+
+  .quiz-welcome-card {
+    padding: 1.4rem 1.1rem;
+    border-radius: 18px;
+  }
+
+  .quiz-welcome-title {
+    font-size: 1.35rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .quiz-welcome-desc {
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+
+  .quiz-runner-container {
+    padding: 1.35rem 1.1rem;
+    border-radius: 18px;
+  }
+
+  .quiz-q-title {
+    font-size: 1.02rem;
+    line-height: 1.4;
+  }
+
+  .quiz-option-label {
+    padding: 0.7rem 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  .quiz-results-card {
+    padding: 1.4rem 1.1rem;
+    border-radius: 18px;
+  }
+
+  /* 18. Policy / Terms Pages */
+  main[style*="padding: 4.5rem"] {
+    padding: 2.2rem 0 3.5rem !important;
+  }
+}
+
+/* Extra Small Phones (<= 480px) */
+@media (max-width: 480px) {
+  .hero-v2-title {
+    font-size: 1.62rem;
+  }
+
+  .section-title-v2 {
+    font-size: 1.42rem;
+  }
+
+  .brand-v2 span {
+    font-size: 0.84rem;
+  }
+
+  .stat-box h4 {
+    font-size: 1.18rem;
+  }
+
+  .stat-box p {
+    font-size: 0.64rem;
+  }
+
+  .deck-amount {
+    font-size: 1.85rem;
+  }
+
+  .photo-card-v2 img {
+    height: 175px;
+  }
+
+  .photo-tag-chip {
+    font-size: 0.58rem;
+    padding: 0.18rem 0.35rem;
+  }
 }

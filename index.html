@@ -124,6 +124,141 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- Mobile & PWA Theme Integration -->
+  <meta name="theme-color" content="#060913">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Schema.org JSON-LD Structured Data for Google Rich Snippets & Ratings -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://thelanguagesacademy.com.br/#organization",
+        "name": "The Languages Academy",
+        "url": "https://thelanguagesacademy.com.br/",
+        "logo": "https://thelanguagesacademy.com.br/assets/images/logo_banner.png",
+        "image": "https://thelanguagesacademy.com.br/assets/images/hero_graphic.png",
+        "description": "Escola online de idiomas especializada em aulas particulares de Inglês, Espanhol e Português para Estrangeiros com metodologia comunicativa e 100% individual.",
+        "telephone": "+5554991863491",
+        "founder": {
+          "@type": "Person",
+          "name": "Luis Armando Molina Riobueno",
+          "jobTitle": "Professor e Mentor Poliglota",
+          "alumniOf": "Universidad de Los Andes (ULA)",
+          "knowsLanguage": ["es", "en", "pt"],
+          "sameAs": [
+            "https://www.instagram.com/luisdesarmando",
+            "https://www.instagram.com/thelanguages_academy"
+          ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "ratingCount": "47",
+          "reviewCount": "47"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Planos de Aulas Particulares de Idiomas",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Plano Essence (1h/semana)",
+              "price": "297.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "url": "https://thelanguagesacademy.com.br/#planos"
+            },
+            {
+              "@type": "Offer",
+              "name": "Plano Momentum (2h/semana)",
+              "price": "547.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "url": "https://thelanguagesacademy.com.br/#planos"
+            },
+            {
+              "@type": "Offer",
+              "name": "Plano Mastery (3h/semana)",
+              "price": "797.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "url": "https://thelanguagesacademy.com.br/#planos"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://thelanguagesacademy.com.br/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como funcionam as aulas particulares online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "As aulas acontecem ao vivo pela internet (via Google Meet ou Zoom), de forma 100% individual. O foco é totalmente em você: suas dúvidas, seus objetivos e seu ritmo. Você pode assistir às aulas do conforto da sua casa ou escritório, pelo computador, tablet ou celular."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A aula experimental é realmente gratuita e sem compromisso?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim, totalmente gratuita! É uma oportunidade para você conhecer o professor Luis Armando Molina Riobueno, experimentar na prática a didática da academia, avaliar seu nível e alinhar suas expectativas antes de tomar qualquer decisão financeira."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Preciso comprar algum livro ou apostila física à parte?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não! Todo o material didático digital já está incluso no valor do seu plano. Disponibilizamos textos autênticos, exercícios interativos, arquivos de áudio, apresentações e anotações compartilhadas sem nenhum custo adicional."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais são as formas de pagamento aceitas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Aceitamos pagamentos práticos via Pix, transferência bancária e cartões de crédito internacionais, com suporte seguro para alunos no Brasil e no exterior (Austrália, EUA, Europa). Sem taxas ocultas nem contratos de fidelidade anual."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "E se eu precisar faltar ou reagendar uma aula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Entendemos que imprevistos acontecem! Basta nos avisar com pelo menos 12 horas de antecedência pelo WhatsApp, e a aula será reagendada de acordo com a disponibilidade mútua da agenda, sem você perder o investimento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "As aulas atendem desde quem nunca estudou até níveis avançados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Com certeza! Atendemos desde o iniciante absoluto (que nunca pronunciou uma palavra no idioma) até executivos e acadêmicos avançados que buscam refinamento de pronúncia, oratória em conferências ou preparação para testes de proficiência internacional."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês preparam para exames oficiais como TOEFL, IELTS ou DELE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! Desenvolvemos simulações cronometradas com questões reais dos exames oficiais (TOEFL, IELTS, Cambridge, DELE, SIELE e CELPE-Bras), trabalhando estratégias comprovadas para você obter a pontuação necessária para imigração ou pós-graduação no exterior."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+
 
 
 </head>
@@ -338,15 +473,15 @@
 
 
 
-                  <li><a href="#cursos" class="dropdown-item-link lang-nav-link" data-lang="en"><span class="nav-icon">🇬🇧</span> Inglês Global</a></li>
+                  <li><a href="#cursos" class="dropdown-item-link lang-nav-link" data-lang="en"><img src="assets/images/flags/flag-us.svg" alt="USA" class="nav-flag-img"> Inglês Global</a></li>
 
 
 
-                  <li><a href="#cursos" class="dropdown-item-link lang-nav-link" data-lang="es"><span class="nav-icon">🇪🇸</span> Espanhol Fluente</a></li>
+                  <li><a href="#cursos" class="dropdown-item-link lang-nav-link" data-lang="es"><img src="assets/images/flags/flag-es.svg" alt="Espanha" class="nav-flag-img"> Espanhol Fluente</a></li>
 
 
 
-                  <li><a href="#cursos" class="dropdown-item-link lang-nav-link" data-lang="pt"><span class="nav-icon">🇧🇷</span> Português para Estrangeiros</a></li>
+                  <li><a href="#cursos" class="dropdown-item-link lang-nav-link" data-lang="pt"><img src="assets/images/flags/flag-br.svg" alt="Brasil" class="nav-flag-img"> Português para Estrangeiros</a></li>
 
 
 
@@ -366,15 +501,15 @@
 
 
 
-                  <li><a href="test-ingles.html" class="dropdown-item-link"><span class="nav-icon">📝</span> Teste de Inglês (A1 - C1)</a></li>
+                  <li><a href="test-ingles.html" target="_blank" rel="noopener" class="dropdown-item-link"><span class="nav-icon">📝</span> Teste de Inglês (A1 - B2)</a></li>
 
 
 
-                  <li><a href="test-espanol.html" class="dropdown-item-link"><span class="nav-icon">📝</span> Teste de Espanhol (A1 - C1)</a></li>
+                  <li><a href="test-espanol.html" target="_blank" rel="noopener" class="dropdown-item-link"><span class="nav-icon">📝</span> Teste de Espanhol (A1 - B2)</a></li>
 
 
 
-                  <li><a href="test-portugues.html" class="dropdown-item-link"><span class="nav-icon">📝</span> Teste de Português</a></li>
+                  <li><a href="test-portugues.html" target="_blank" rel="noopener" class="dropdown-item-link"><span class="nav-icon">📝</span> Teste de Português (A1 - B2)</a></li>
 
 
 
@@ -762,6 +897,20 @@
 
 
 
+                <!-- Trilingual Flags Showcase Banner -->
+        <div class="trilingual-showcase-banner reveal delay-1" data-tilt data-tilt-max="4">
+          <div class="trilingual-image-wrapper">
+            <img src="assets/images/flags-trilingual.jpg" alt="Inglês, Espanhol e Português na The Languages Academy" class="trilingual-banner-img" loading="lazy">
+            <div class="trilingual-banner-overlay">
+              <div class="trilingual-banner-content">
+                <span class="trilingual-pill">3 IDIOMAS • UMA METODOLOGIA INTERNACIONAL</span>
+                <h3 class="trilingual-headline">Conecte-se com mais de 1,8 bilhão de falantes no mundo</h3>
+                <p class="trilingual-subline">Inglês Global • Espanhol Fluente • Português para Estrangeiros (CELPE-Bras)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Language Navigation Tabs -->
 
 
@@ -774,7 +923,7 @@
 
 
 
-            <span style="font-size:1.35rem;">🇬🇧</span> Inglês Global
+            <img src="assets/images/flags/flag-us.svg" alt="USA" class="tab-flag-img"> Inglês Global
 
 
 
@@ -786,7 +935,7 @@
 
 
 
-            <span style="font-size:1.35rem;">🇪🇸</span> Espanhol Fluente
+            <img src="assets/images/flags/flag-es.svg" alt="Espanha" class="tab-flag-img"> Espanhol Fluente
 
 
 
@@ -798,7 +947,7 @@
 
 
 
-            <span style="font-size:1.35rem;">🇧🇷</span> Português Estrangeiros
+            <img src="assets/images/flags/flag-br.svg" alt="Brasil" class="tab-flag-img"> Português Estrangeiros
 
 
 
@@ -1924,6 +2073,7 @@
 
 
 
+
           <!-- 3 Dynamic Story-Pills for Quick Scanning -->
 
           <div class="about-story-pills">
@@ -2208,7 +2358,7 @@
 
 
 
-                <h4>Augusto</h4>
+                <h4>Augusto</h4><span class="student-lang-tag"><img src="assets/images/flags/flag-us.svg" alt="Inglês" class="nav-flag-img"> Aluno de Inglês</span>
 
 
 
@@ -2308,7 +2458,7 @@
 
 
 
-                <h4>Nicolas</h4>
+                <h4>Nicolas</h4><span class="student-lang-tag"><img src="assets/images/flags/flag-us.svg" alt="Inglês" class="nav-flag-img"> <img src="assets/images/flags/flag-es.svg" alt="Espanhol" class="nav-flag-img"> Aluno de Inglês &amp; Espanhol</span>
 
 
 
@@ -2408,7 +2558,7 @@
 
 
 
-                <h4>Pamela</h4>
+                <h4>Pamela</h4><span class="student-lang-tag"><img src="assets/images/flags/flag-us.svg" alt="Inglês" class="nav-flag-img"> Aluna de Inglês</span>
 
 
 
@@ -2488,7 +2638,7 @@
 
 
 
-          <h2 class="section-title-v2">Descubra Seu Nível em Apenas 5 Minutos</h2>
+          <h2 class="section-title-v2">Qual é o Seu Nível Real de Fluência?</h2>
 
 
 
@@ -2496,7 +2646,7 @@
 
 
 
-            Faça uma autoavaliação interativa elaborada com perguntas reais de proficiência. Ao final, receba o resultado imediato conforme a escala oficial do Quadro Comum Europeu (CEFR).
+            Faça nossa avaliação interativa baseada na escala oficial do Quadro Comum Europeu (CEFR). Responda às questões práticas no seu ritmo e receba seu diagnóstico detalhado na hora!
 
 
 
@@ -2514,156 +2664,95 @@
 
         <div class="quiz-cards-grid-v2">
 
-
-
-          
-
-
-
           <!-- Quiz 1: Inglês -->
-
-
-
           <div class="quiz-card-v2 reveal delay-1" data-tilt data-tilt-max="10">
-
-
-
-            <div class="quiz-flag-v2">🇬🇧</div>
-
-
-
+            <div class="quiz-flag-v2">
+              <img src="assets/images/flags/flag-us.svg" alt="Bandeira dos Estados Unidos (Inglês)" class="quiz-flag-img">
+            </div>
             <h3>Teste de Nível de Inglês</h3>
+            <span class="quiz-pill-badge">CEFR • Níveis A1 ao B2</span>
 
+            <ul class="quiz-features-list">
+              <li>
+                <span class="quiz-feature-check">✓</span>
+                <span>Gramática prática e vocabulário essencial</span>
+              </li>
+              <li>
+                <span class="quiz-feature-check">✓</span>
+                <span>Phrasal verbs e expressões do dia a dia</span>
+              </li>
+              <li>
+                <span class="quiz-feature-check">✓</span>
+                <span>Diagnóstico detalhado e pontuação na hora</span>
+              </li>
+            </ul>
 
-
-            <p>40 questões estratificadas (A1 ao B2) com cronômetro de 15 minutos e relatório diagnóstico por nível.</p>
-
-
-
-            <a href="test-ingles.html" class="btn-v2 btn-v2-primary" style="width:100%;">
-
-
-
+            <a href="test-ingles.html" target="_blank" rel="noopener" class="btn-v2 btn-v2-primary" style="width:100%;">
               Iniciar Teste de Inglês
-
-
-
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-
-
-
             </a>
-
-
-
           </div>
-
-
-
-
-
-
 
           <!-- Quiz 2: Espanhol -->
-
-
-
           <div class="quiz-card-v2 reveal delay-2" data-tilt data-tilt-max="10">
-
-
-
-            <div class="quiz-flag-v2">🇪🇸</div>
-
-
-
+            <div class="quiz-flag-v2">
+              <img src="assets/images/flags/flag-es.svg" alt="Bandeira da Espanha (Espanhol)" class="quiz-flag-img">
+            </div>
             <h3>Teste de Nível de Espanhol</h3>
+            <span class="quiz-pill-badge">MCER • Níveis A1 ao B2</span>
 
+            <ul class="quiz-features-list">
+              <li>
+                <span class="quiz-feature-check">✓</span>
+                <span>Estruturas verbais e modo subjuntivo</span>
+              </li>
+              <li>
+                <span class="quiz-feature-check">✓</span>
+                <span>Falsos cognatos e usos comunicativos reais</span>
+              </li>
+              <li>
+                <span class="quiz-feature-check">✓</span>
+                <span>Diagnóstico detalhado e pontuação na hora</span>
+              </li>
+            </ul>
 
-
-            <p>40 preguntas estratificadas (A1 al B2) con cronómetro de 15 minutos y diagnóstico gramatical inmediato.</p>
-
-
-
-            <a href="test-espanol.html" class="btn-v2 btn-v2-primary" style="width:100%;">
-
-
-
+            <a href="test-espanol.html" target="_blank" rel="noopener" class="btn-v2 btn-v2-primary" style="width:100%;">
               Iniciar Teste de Espanhol
-
-
-
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-
-
-
             </a>
-
-
-
           </div>
-
-
-
-
-
-
 
           <!-- Quiz 3: Português -->
-
-
-
           <div class="quiz-card-v2 reveal delay-3" data-tilt data-tilt-max="10">
+            <div class="quiz-flag-v2">
+              <img src="assets/images/flags/flag-br.svg" alt="Bandeira do Brasil (Português)" class="quiz-flag-img">
+            </div>
+            <h3>Teste de Nível de Português</h3>
+            <span class="quiz-pill-badge">CELPE-Bras • Níveis A1 ao B2</span>
 
+            <ul class="quiz-features-list">
+              <li>
+                <span class="quiz-feature-check">✓</span>
+                <span>Concordância, regência e colocação pronominal</span>
+              </li>
+              <li>
+                <span class="quiz-feature-check">✓</span>
+                <span>Comunicação e expressões do Português do Brasil</span>
+              </li>
+              <li>
+                <span class="quiz-feature-check">✓</span>
+                <span>Diagnóstico detalhado e pontuação na hora</span>
+              </li>
+            </ul>
 
-
-            <div class="quiz-flag-v2">🇧🇷</div>
-
-
-
-            <h3>Portuguese Placement Test</h3>
-
-
-
-            <p>40 questões estratificadas (A1 ao B2) avaliando estruturas, conectivos e conversação do Português do Brasil.</p>
-
-
-
-            <a href="test-portugues.html" class="btn-v2 btn-v2-primary" style="width:100%;">
-
-
-
+            <a href="test-portugues.html" target="_blank" rel="noopener" class="btn-v2 btn-v2-primary" style="width:100%;">
               Iniciar Teste de Português
-
-
-
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-
-
-
             </a>
-
-
-
           </div>
 
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
       </div>
-
-
-
     </section>
 
 
@@ -2729,10 +2818,10 @@
 
           <div class="deck-price-box">
             <span class="deck-currency">R$</span>
-            <span class="deck-amount">247</span>
+            <span class="deck-amount">297</span>
             <span class="deck-period">/mês</span>
           </div>
-          <span class="deck-hourly-badge">R$ 61,75 / hora de aula</span>
+          <span class="deck-hourly-badge">R$ 74,25 / hora de aula</span>
 
           <ul class="deck-features-list">
             <li>
@@ -2881,23 +2970,21 @@
 
       </div>
 
-
-
-
-
-
-
+        <!-- Pricing Trust & Guarantee Banner -->
+        <div class="pricing-guarantee-banner reveal delay-2">
+          <div class="guarantee-badge">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div class="guarantee-content">
+            <h4>Compromisso &amp; Flexibilidade Total</h4>
+            <p>Sem taxa de matrícula • Sem contratos de fidelidade anual • Reposição de aulas com aviso prévio • Aulas gravadas sob solicitação</p>
+          </div>
+          <a href="https://wa.me/5554991863491?text=Ol%C3%A1%2C%20Professor%20Luis!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20planos." target="_blank" rel="noopener" class="btn-v2 btn-v2-whatsapp" style="padding:0.75rem 1.4rem; font-size:0.9rem; white-space:nowrap;">
+            Tirar Dúvidas no WhatsApp
+          </a>
+        </div>
       </div>
-
-
-
     </section>
-
-
-
-
-
-
 
     <!-- ================= FAQ 2.0 ================= -->
 
@@ -3115,7 +3202,7 @@
 
 
 
-              Aceitamos pagamentos práticos via Pix, transferência bancária e cartões de crédito/débito. A mensalidade deve ser liquidada preferencialmente nos primeiros 10 dias úteis de cada ciclo mensal.
+              Aceitamos pagamentos práticos via Pix, transferência bancária e cartões de crédito internacionais, com suporte seguro para alunos no Brasil e no exterior (Austrália, EUA, Europa). Sem taxas ocultas nem contratos de fidelidade anual.
 
 
 
@@ -3539,42 +3626,9 @@
 
 
 
-            <div class="form-row-v2">
-
-
-
-              <div class="form-group-v2">
-
-
-
-                <label for="cfFirstName">Nome *</label>
-
-
-
-                <input type="text" id="cfFirstName" class="form-control-v2" placeholder="Seu primeiro nome" required>
-
-
-
-              </div>
-
-
-
-              <div class="form-group-v2">
-
-
-
-                <label for="cfLastName">Sobrenome</label>
-
-
-
-                <input type="text" id="cfLastName" class="form-control-v2" placeholder="Seu sobrenome">
-
-
-
-              </div>
-
-
-
+                        <div class="form-group-v2">
+              <label for="cfFullName">Nome Completo *</label>
+              <input type="text" id="cfFullName" class="form-control-v2" placeholder="Seu nome completo" required>
             </div>
 
 
@@ -3795,6 +3849,18 @@
 
 
 
+        <a href="https://www.instagram.com/luisdesarmando" target="_blank" rel="noopener" aria-label="Instagram do Professor Luis" class="social-icon-circle">
+
+
+
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+
+
+
+        </a>
+
+
+
         <a href="https://wa.me/5554991863491" target="_blank" rel="noopener" aria-label="WhatsApp do Professor Luis" class="social-icon-circle">
 
 
@@ -3812,18 +3878,6 @@
 
 
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-
-
-
-        </a>
-
-
-
-        <a href="https://www.facebook.com/share/15VxsHR9g6/" target="_blank" rel="noopener" aria-label="Facebook The Languages Academy" class="social-icon-circle">
-
-
-
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
 
 
 
@@ -3994,9 +4048,9 @@
         <div class="footer-v2-col">
           <h4>Cursos &amp; Idiomas</h4>
           <ul class="footer-v2-links">
-            <li><a href="#cursos">🇬🇧 Curso de Inglês</a></li>
-            <li><a href="#cursos">🇪🇸 Curso de Espanhol</a></li>
-            <li><a href="#cursos">🇧🇷 Português para Estrangeiros</a></li>
+            <li><a href="#cursos"><img src="assets/images/flags/flag-us.svg" alt="USA" class="footer-flag-img"> Curso de Inglês</a></li>
+            <li><a href="#cursos"><img src="assets/images/flags/flag-es.svg" alt="Espanha" class="footer-flag-img"> Curso de Espanhol</a></li>
+            <li><a href="#cursos"><img src="assets/images/flags/flag-br.svg" alt="Brasil" class="footer-flag-img"> Português para Estrangeiros</a></li>
             <li><a href="#" class="open-quiz-modal">🎯 Testes de Nivelamento (CEFR)</a></li>
           </ul>
         </div>
@@ -4219,15 +4273,15 @@
 
 
 
-              <option value="Inglês">🇬🇧 Inglês</option>
+              <option value="Inglês">Inglês</option>
 
 
 
-              <option value="Espanhol">🇪🇸 Espanhol</option>
+              <option value="Espanhol">Espanhol</option>
 
 
 
-              <option value="Português para Estrangeiros">🇧🇷 Português para Estrangeiros</option>
+              <option value="Português para Estrangeiros">Português para Estrangeiros</option>
 
 
 
@@ -4387,7 +4441,7 @@
 
 
 
-        Teste gratuito e instantâneo com 40 questões, cronômetro de 15 minutos e diagnóstico completo por nível (A1 ao B2) com relatório direto no WhatsApp.
+        Teste gratuito e dinâmico com 40 questões práticas e diagnóstico completo por nível (A1 ao B2) com relatório direto no WhatsApp.
 
 
 
@@ -4403,11 +4457,11 @@
 
 
 
-        <a href="test-ingles.html" class="quiz-picker-item">
+        <a href="test-ingles.html" target="_blank" rel="noopener" class="quiz-picker-item">
 
 
 
-          <span class="picker-item-flag">🇬🇧</span>
+          <img src="assets/images/flags/flag-us.svg" alt="USA" class="picker-flag-img">
 
 
 
@@ -4419,7 +4473,7 @@
 
 
 
-            <p>40 questões • Gramática, vocabulário e expressões (A1 ao B2) • 15 min</p>
+            <p>40 questões • Gramática, vocabulário e expressões (A1 ao B2) • Resultado Imediato</p>
 
 
 
@@ -4439,11 +4493,11 @@
 
 
 
-        <a href="test-espanol.html" class="quiz-picker-item">
+        <a href="test-espanol.html" target="_blank" rel="noopener" class="quiz-picker-item">
 
 
 
-          <span class="picker-item-flag">🇪🇸</span>
+          <img src="assets/images/flags/flag-es.svg" alt="Espanha" class="picker-flag-img">
 
 
 
@@ -4455,7 +4509,7 @@
 
 
 
-            <p>40 questões • Subjuntivo, tempos compostos e falsos cognatos • 15 min</p>
+            <p>40 questões • Subjuntivo, tempos compostos e falsos cognatos • Resultado Imediato</p>
 
 
 
@@ -4475,11 +4529,11 @@
 
 
 
-        <a href="test-portugues.html" class="quiz-picker-item">
+        <a href="test-portugues.html" target="_blank" rel="noopener" class="quiz-picker-item">
 
 
 
-          <span class="picker-item-flag">🇧🇷</span>
+          <img src="assets/images/flags/flag-br.svg" alt="Brasil" class="picker-flag-img">
 
 
 
@@ -4491,7 +4545,7 @@
 
 
 
-            <p>40 questões • Concordância, regência e usos reais do português brasileiro • 15 min</p>
+            <p>40 questões • Concordância, regência e usos reais do português brasileiro • Resultado Imediato</p>
 
 
 

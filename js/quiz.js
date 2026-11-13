@@ -5498,7 +5498,7 @@ const QUIZ_CONFIGS = {
   ingles: {
     langCode: 'en',
     name: 'Inglês',
-    flag: '🇬🇧',
+    flag: '<img src="assets/images/flags/flag-us.svg" alt="USA" class="quiz-inline-flag">',
     welcomeBadge: 'AVALIAÇÃO OFICIAL CEFR • 40 QUESTÕES',
     welcomeTitle: 'Seja bem-vindo ao Teste de Nivelamento de Inglês!',
     welcomeDesc: 'Desenvolvido pela The Languages Academy para diagnosticar com precisão cirúrgica suas habilidades comunicativas e gramaticais do nível básico ao avançado.',
@@ -5542,7 +5542,7 @@ const QUIZ_CONFIGS = {
   espanol: {
     langCode: 'es',
     name: 'Espanhol',
-    flag: '🇪🇸',
+    flag: '<img src="assets/images/flags/flag-es.svg" alt="Espanha" class="quiz-inline-flag">',
     welcomeBadge: 'EVALUACIÓN OFICIAL MCER • 40 PREGUNTAS',
     welcomeTitle: '¡Bienvenido a la Prueba de Nivel de Español!',
     welcomeDesc: 'Diseñado por The Languages Academy para diagnosticar con precisión tu dominio gramatical, vocabulario y soltura comunicativa desde el nivel básico hasta el avanzado.',
@@ -5586,7 +5586,7 @@ const QUIZ_CONFIGS = {
   portugues: {
     langCode: 'pt',
     name: 'Português',
-    flag: '🇧🇷',
+    flag: '<img src="assets/images/flags/flag-br.svg" alt="Brasil" class="quiz-inline-flag">',
     welcomeBadge: 'AVALIAÇÃO OFICIAL PLE / CEFR • 40 QUESTÕES',
     welcomeTitle: 'Seja bem-vindo ao Teste de Nivelamento de Português!',
     welcomeDesc: 'Desenvolvido pela The Languages Academy para avaliar seu domínio comunicativo e gramatical do Português do Brasil, do nível iniciante ao fluente.',

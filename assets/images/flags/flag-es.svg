@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="64" height="48">
+  <defs>
+    <clipPath id="es-clip">
+      <rect width="640" height="480" rx="40"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#es-clip)">
+    <!-- Stripes -->
+    <path fill="#c60b1e" d="M0 0h640v480H0z"/>
+    <path fill="#ffc400" d="M0 120h640v240H0z"/>
+    <!-- Coat of Arms Emblem (Stylized Spain Crown & Pillars Shield) -->
+    <g transform="translate(145, 150) scale(0.68)">
+      <!-- Left & Right Pillars (Plus Ultra) -->
+      <rect x="-70" y="30" width="16" height="150" fill="#e2e8f0" rx="4"/>
+      <rect x="180" y="30" width="16" height="150" fill="#e2e8f0" rx="4"/>
+      <!-- Pillar bases & capitals -->
+      <path fill="#ffc400" d="M-78 20h32v12h-32zM-78 180h32v12h-32zM172 20h32v12h-32zM172 180h32v12h-32z"/>
+      <!-- Red ribbon around pillars -->
+      <path fill="#c60b1e" d="M-84 85h44v22h-44zM166 85h44v22h-44z"/>
+      <!-- Crown on top -->
+      <path fill="#ffc400" d="M0 10l20-25 20 20 25-25 25 25 20-20 20 25z"/>
+      <circle cx="65" cy="-28" r="8" fill="#ffc400"/>
+      <!-- Shield body -->
+      <path fill="#c60b1e" stroke="#fff" stroke-width="6" d="M-10 30h150v90c0 55-75 80-75 80s-75-25-75-80z"/>
+      <path fill="#ffc400" d="M-5 35h65v80H-5zM70 35h65v80H70z"/>
+      <!-- Inner castle & lion motifs -->
+      <rect x="10" y="55" width="35" height="45" fill="#c60b1e" rx="4"/>
+      <path fill="#c60b1e" d="M85 60c10-10 30 0 25 20-4 15-20 25-25 15z"/>
+      <ellipse cx="65" cy="120" rx="14" ry="18" fill="#3b82f6"/>
+    </g>
+  </g>
+</svg>
