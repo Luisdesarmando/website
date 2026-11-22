@@ -4337,3 +4337,934 @@ textarea.form-control-v2 {
     padding: 0.18rem 0.35rem;
   }
 }
+
+
+/* ==========================================================================
+   APP SHOWCASE 2.0 (PWA + ANDROID APK + QR CODE DESKTOP)
+   ========================================================================== */
+.app-showcase-section {
+  position: relative;
+  padding: 6.5rem 0 5.5rem;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.app-showcase-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.16) 0%, rgba(14, 165, 233, 0.08) 45%, transparent 70%);
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.app-showcase-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.app-showcase-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-showcase-title {
+  font-size: 2.35rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #F8FAFC;
+  margin: 1rem 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.app-showcase-desc {
+  font-size: 1.05rem;
+  color: #94A3B8;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.app-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2.2rem;
+}
+
+.app-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.95rem 1.15rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.app-benefit-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(99, 102, 241, 0.3);
+  transform: translateX(4px);
+}
+
+.app-benefit-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.app-benefit-text h4 {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #F1F5F9;
+  margin: 0 0 0.25rem 0;
+}
+
+.app-benefit-text p {
+  font-size: 0.84rem;
+  color: #94A3B8;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.app-buttons-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-app-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.85rem 1.35rem;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-app-action:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+.btn-app-apple {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+}
+
+.btn-app-apple:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.08) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+}
+
+.btn-app-android {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.18) 0%, rgba(16, 185, 129, 0.06) 100%);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  color: #6EE7B7;
+}
+
+.btn-app-android:hover {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.28) 0%, rgba(16, 185, 129, 0.12) 100%);
+  border-color: rgba(52, 211, 153, 0.65);
+  color: #A7F3D0;
+}
+
+.app-btn-icon-svg {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+}
+
+.app-btn-meta {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.app-btn-sub {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.app-btn-main {
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+/* Card Direito com QR Code */
+.app-qr-card {
+  background: linear-gradient(160deg, rgba(30, 41, 59, 0.72) 0%, rgba(15, 23, 42, 0.88) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.28);
+  border-radius: 26px;
+  padding: 2.2rem 2rem;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 35px rgba(99, 102, 241, 0.18);
+  backdrop-filter: blur(20px);
+  position: relative;
+}
+
+.app-qr-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #A5B4FC;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.app-qr-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin: 0 0 0.4rem;
+}
+
+.app-qr-desc {
+  font-size: 0.82rem;
+  color: #94A3B8;
+  margin: 0 0 1.2rem;
+  line-height: 1.4;
+}
+
+.app-qr-box {
+  background: #FFFFFF;
+  border-radius: 18px;
+  padding: 1rem;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.app-qr-box:hover {
+  transform: scale(1.03);
+}
+
+.app-qr-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.app-qr-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-align: left;
+  background: rgba(10, 15, 29, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 0.75rem 0.95rem;
+}
+
+.app-step-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.76rem;
+  color: #CBD5E1;
+}
+
+.app-step-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #38BDF8;
+  flex-shrink: 0;
+}
+
+/* Navbar App Link */
+.nav-app-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.85rem !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  color: #38BDF8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.3) !important;
+  background: rgba(56, 189, 248, 0.08) !important;
+  border-radius: 10px !important;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.nav-app-btn:hover {
+  background: rgba(56, 189, 248, 0.18) !important;
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  color: #7DD3FC !important;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .app-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .app-showcase-title {
+    font-size: 1.85rem;
+  }
+  
+  .app-qr-card {
+    max-width: 440px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-showcase-title {
+    font-size: 1.5rem;
+  }
+  
+  .btn-app-action {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .app-qr-box {
+    width: 160px;
+    height: 160px;
+    padding: 0.85rem;
+  }
+}
+
+
+/* ==========================================================================
+   SMARTPHONE MOCKUP PRO (DARK THEME & LIVE COACH PREVIEW)
+   ========================================================================== */
+.phone-mockup-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-device-frame {
+  width: 304px;
+  height: 605px;
+  background: #0B0F19;
+  border: 10px solid #1E293B;
+  border-radius: 46px;
+  box-shadow: 0 25px 65px -12px rgba(0, 0, 0, 0.85), 0 0 45px rgba(99, 102, 241, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  user-select: none;
+  margin: 0 auto;
+}
+
+.phone-device-frame:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 35px 80px -15px rgba(0, 0, 0, 0.95), 0 0 60px rgba(99, 102, 241, 0.4);
+}
+
+.phone-island {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 86px;
+  height: 20px;
+  background: #000000;
+  border-radius: 12px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9px;
+  box-sizing: border-box;
+}
+
+.phone-camera-lens {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #0F172A;
+  border: 1.5px solid #1E293B;
+}
+
+.phone-speaker-pill {
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background: #1E293B;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #090D1A 0%, #0E1526 100%);
+  padding: 0.6rem 0.85rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.phone-status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.4rem 0.2rem;
+  font-size: 0.68rem;
+  color: #94A3B8;
+  font-weight: 700;
+}
+
+.phone-status-icons {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  font-size: 0.64rem;
+}
+
+.phone-app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.2rem 0.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.phone-lang-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 0.22rem 0.55rem;
+  font-size: 0.72rem;
+}
+
+.phone-arrow {
+  color: #6366F1;
+  font-size: 0.65rem;
+}
+
+.phone-stats-chips {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.phone-stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 12px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.chip-streak {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #FCD34D;
+}
+
+.chip-xp {
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #A5B4FC;
+}
+
+.phone-avatar-crown {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+}
+
+.phone-screen-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding-top: 0.55rem;
+  overflow: hidden;
+}
+
+.phone-hero-card {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.12) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 16px;
+  padding: 0.75rem 0.85rem;
+  position: relative;
+}
+
+.phone-card-badge {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #FCD34D;
+  margin-bottom: 0.25rem;
+}
+
+.phone-card-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 0.15rem;
+  line-height: 1.25;
+}
+
+.phone-card-subtitle {
+  font-size: 0.68rem;
+  color: #94A3B8;
+  margin: 0 0 0.55rem;
+  line-height: 1.3;
+}
+
+.phone-hero-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-play-btn {
+  background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.3rem 0.65rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(99, 102, 241, 0.4);
+}
+
+.phone-reward-tag {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #34D399;
+}
+
+.phone-coach-card {
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.6) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 16px;
+  padding: 0.75rem 0.85rem;
+}
+
+.coach-live-header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.45rem;
+}
+
+.coach-avatar-ring {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1.5px solid rgba(56, 189, 248, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  position: relative;
+}
+
+.coach-dot-online {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34D399;
+  border: 1.5px solid #0B0F19;
+}
+
+.coach-live-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.coach-name {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+
+.coach-live-status {
+  font-size: 0.62rem;
+  color: #38BDF8;
+  font-weight: 600;
+}
+
+.coach-waveform-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 0 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.wave-bar {
+  width: 3px;
+  background: linear-gradient(180deg, #38BDF8 0%, #6366F1 100%);
+  border-radius: 3px;
+  animation: wavePulse 1.2s ease-in-out infinite alternate;
+}
+
+.w1  { height: 6px;  animation-delay: 0.05s; }
+.w2  { height: 16px; animation-delay: 0.2s;  }
+.w3  { height: 10px; animation-delay: 0.35s; }
+.w4  { height: 22px; animation-delay: 0.1s;  }
+.w5  { height: 14px; animation-delay: 0.4s;  }
+.w6  { height: 18px; animation-delay: 0.25s; }
+.w7  { height: 8px;  animation-delay: 0.15s; }
+.w8  { height: 20px; animation-delay: 0.3s;  }
+.w9  { height: 12px; animation-delay: 0.45s; }
+.w10 { height: 7px;  animation-delay: 0.18s; }
+
+@keyframes wavePulse {
+  0% { transform: scaleY(0.4); opacity: 0.5; }
+  100% { transform: scaleY(1); opacity: 1; }
+}
+
+.coach-speech-bubble {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 0.4rem 0.55rem;
+  font-size: 0.66rem;
+  color: #CBD5E1;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+.phone-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+}
+
+.phone-tool-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.65rem;
+  color: #E2E8F0;
+  font-weight: 600;
+}
+
+.phone-bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.45rem 0.2rem 0.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: auto;
+}
+
+.phone-nav-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.72rem;
+  color: #64748B;
+}
+
+.phone-nav-tab small {
+  font-size: 0.58rem;
+}
+
+.phone-nav-tab.active {
+  color: #6366F1;
+  font-weight: 700;
+}
+
+.phone-nav-tab.highlight-coach {
+  color: #38BDF8;
+}
+
+.phone-qr-companion {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.75) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 16px;
+  padding: 0.75rem 1rem;
+  max-width: 304px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  box-sizing: border-box;
+}
+
+.qr-companion-box {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 0.35rem;
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-companion-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.qr-companion-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.qr-companion-pill {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #A5B4FC;
+  letter-spacing: 0.04em;
+}
+
+.qr-companion-text {
+  font-size: 0.72rem;
+  color: #94A3B8;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.qr-companion-text strong {
+  color: #F8FAFC;
+}
+
+@media (max-width: 480px) {
+  .phone-device-frame {
+    width: 280px;
+    height: 560px;
+  }
+}
+
+
+/* ==========================================================================
+   PLANO ESPECIAL 100% DIGITAL: TLA COACH PRO (R$ 67/MÊS)
+   ========================================================================== */
+.tla-standalone-banner {
+  position: relative;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.75) 100%);
+  border: 1.5px solid rgba(56, 189, 248, 0.35);
+  border-radius: 24px;
+  padding: 2.2rem 2.4rem;
+  margin: 3.5rem 0 2.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(56, 189, 248, 0.12);
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+}
+
+.tla-standalone-glow {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, rgba(99, 102, 241, 0.08) 50%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.tla-standalone-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.tla-badge-digital {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #38BDF8;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.85rem;
+  text-transform: uppercase;
+}
+
+.tla-standalone-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 0.6rem;
+  line-height: 1.25;
+}
+
+.tla-standalone-desc {
+  font-size: 0.92rem;
+  color: #94A3B8;
+  margin: 0 0 1.25rem;
+  line-height: 1.55;
+}
+
+.tla-standalone-perks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 1rem;
+}
+
+.tla-perk-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.85rem;
+  color: #E2E8F0;
+  line-height: 1.4;
+}
+
+.tla-check-icon {
+  color: #38BDF8;
+  font-weight: 800;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.tla-standalone-pricing-box {
+  background: rgba(10, 15, 29, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.6rem 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.tla-price-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94A3B8;
+  margin-bottom: 0.35rem;
+}
+
+.tla-price-value {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.tla-curr {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #CBD5E1;
+}
+
+.tla-val {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.tla-period {
+  font-size: 0.95rem;
+  color: #94A3B8;
+  font-weight: 600;
+}
+
+.tla-sub-rate {
+  font-size: 0.76rem;
+  color: #38BDF8;
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+.tla-instant-delivery {
+  font-size: 0.75rem;
+  color: #94A3B8;
+  margin-top: 0.6rem;
+}
+
+.app-tier-footnote {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #94A3B8;
+  line-height: 1.4;
+}
+
+.app-tier-footnote strong {
+  color: #E2E8F0;
+}
+
+@media (max-width: 900px) {
+  .tla-standalone-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+  .tla-standalone-perks {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,4 @@
+# Ignore large binary downloads and temp backups
+assets/app/
+*.apk
+*.bak

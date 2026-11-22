@@ -6186,6 +6186,20 @@ ${conf.waClosing}`;
             ${conf.restartButtonText}
           </button>
         </div>
+
+        <!-- App Coach IA Taster Invitation -->
+        <div class="quiz-app-invitation-box" style="margin-top: 1.6rem; background: linear-gradient(135deg, rgba(99, 102, 241, 0.14) 0%, rgba(56, 189, 248, 0.08) 100%); border: 1px solid rgba(99, 102, 241, 0.35); border-radius: 16px; padding: 1.15rem 1.35rem; display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 0.85rem; text-align: left;">
+            <div style="font-size: 1.8rem; line-height: 1;">📱</div>
+            <div>
+              <h5 style="color: #FFF; font-size: 0.96rem; font-weight: 700; margin: 0 0 0.2rem;">${activeQuizState.language === 'espanol' ? '¿Quieres practicar tu nivel ahora mismo?' : 'Quer treinar seu nível agora mesmo?'}</h5>
+              <p style="color: #94A3B8; font-size: 0.82rem; margin: 0; line-height: 1.4;">${activeQuizState.language === 'espanol' ? 'Descarga el App The Languages Academy y prueba <strong>3 sesiones gratuitas</strong> con el Coach de Voz IA.' : 'Baixe o App The Languages Academy e experimente <strong>3 sessões gratuitas</strong> com o TLA Coach de Voz IA.'}</p>
+            </div>
+          </div>
+          <a href="index.html#app" class="btn-v2 btn-v2-glass" style="font-size: 0.85rem; padding: 0.6rem 1.2rem; white-space: nowrap; border-color: rgba(99, 102, 241, 0.5); text-decoration: none;">
+            ${activeQuizState.language === 'espanol' ? 'Probar en el App →' : 'Experimentar no App →'}
+          </a>
+        </div>
       </div>
     </div>
   `;
